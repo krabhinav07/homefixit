@@ -8,7 +8,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/resend/resend-go/v2"
 	"github.com/rs/zerolog"
-	"github.com/sriniously/go-boilerplate/internal/config"
+	"github.com/krabhinav07/homefixit/internal/config"
 )
 
 type Client struct {

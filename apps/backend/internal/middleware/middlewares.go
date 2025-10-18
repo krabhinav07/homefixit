@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"github.com/newrelic/go-agent/v3/newrelic"
-	"github.com/sriniously/go-boilerplate/internal/server"
+	"github.com/krabhinav07/homefixit/internal/server"
 )
 
 type Middlewares struct {
