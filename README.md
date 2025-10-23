@@ -1,4 +1,4 @@
-# Go Boilerplate
+# Go homefixit
 
 A production-ready monorepo template for building scalable web applications with Go backend and TypeScript frontend. Built with modern best practices, clean architecture, and comprehensive tooling.
 
@@ -18,7 +18,7 @@ A production-ready monorepo template for building scalable web applications with
 ## Project Structure
 
 ```
-go-boilerplate/
+go-homefixit/
 ├── apps/backend/          # Go backend application
 ├── packages/         # Frontend packages (React, Vue, etc.)
 ├── package.json      # Monorepo configuration
@@ -35,39 +35,8 @@ go-boilerplate/
 - PostgreSQL 16+
 - Redis 8+
 
-### Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/sriniously/go-boilerplate.git
-cd go-boilerplate
-```
-
-2. Install dependencies:
-```bash
-# Install frontend dependencies
-bun install
-
-# Install backend dependencies
-cd apps/backend
-go mod download
-```
-
-3. Set up environment variables:
-```bash
-cp apps/backend/.env.example apps/backend/.env
-# Edit apps/backend/.env with your configuration
-```
-
-4. Start the database and Redis.
-
-5. Run database migrations:
-```bash
-cd apps/backend
-task migrations:up
-```
-
-6. Start the development server:
+ Start the development server:
 ```bash
 # From root directory
 bun dev
@@ -100,20 +69,20 @@ bun lint               # Lint all packages
 
 ### Environment Variables
 
-The backend uses environment variables prefixed with `BOILERPLATE_`. Key variables include:
+The backend uses environment variables prefixed with `homefixit_`. Key variables include:
 
-- `BOILERPLATE_DATABASE_*` - PostgreSQL connection settings
-- `BOILERPLATE_SERVER_*` - Server configuration
-- `BOILERPLATE_AUTH_*` - Authentication settings
-- `BOILERPLATE_REDIS_*` - Redis connection
-- `BOILERPLATE_EMAIL_*` - Email service configuration
-- `BOILERPLATE_OBSERVABILITY_*` - Monitoring settings
+- `homefixit_DATABASE_*` - PostgreSQL connection settings
+- `homefixit_SERVER_*` - Server configuration
+- `homefixit_AUTH_*` - Authentication settings
+- `homefixit_REDIS_*` - Redis connection
+- `homefixit_EMAIL_*` - Email service configuration
+- `homefixit_OBSERVABILITY_*` - Monitoring settings
 
 See `apps/backend/.env.example` for a complete list.
 
 ## Architecture
 
-This boilerplate follows clean architecture principles:
+This homefixit follows clean architecture principles:
 
 - **Handlers**: HTTP request/response handling
 - **Services**: Business logic implementation
