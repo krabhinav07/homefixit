@@ -3,10 +3,10 @@ package testing
 import (
 	"time"
 
-	"github.com/rs/zerolog"
 	"github.com/krabhinav07/homefixit/internal/config"
 	"github.com/krabhinav07/homefixit/internal/database"
 	"github.com/krabhinav07/homefixit/internal/server"
+	"github.com/rs/zerolog"
 )
 
 // CreateTestServer creates a server instance for testing
@@ -23,7 +23,7 @@ func CreateTestServer(logger *zerolog.Logger, db *TestDB) *server.Server {
 			},
 			NewRelic: config.NewRelicConfig{
 				LicenseKey:                "",    // Empty for tests
-				AppLogForwardingEnabled:   false, // Disabled for tests  
+				AppLogForwardingEnabled:   false, // Disabled for tests
 				DistributedTracingEnabled: false, // Disabled for tests
 				DebugLogging:              false, // Disabled for tests
 			},

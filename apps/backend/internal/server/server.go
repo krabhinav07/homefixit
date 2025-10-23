@@ -7,13 +7,13 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/newrelic/go-agent/v3/integrations/nrredis-v9"
-	"github.com/redis/go-redis/v9"
-	"github.com/rs/zerolog"
 	"github.com/krabhinav07/homefixit/internal/config"
 	"github.com/krabhinav07/homefixit/internal/database"
 	"github.com/krabhinav07/homefixit/internal/lib/job"
 	loggerPkg "github.com/krabhinav07/homefixit/internal/logger"
+	"github.com/newrelic/go-agent/v3/integrations/nrredis-v9"
+	"github.com/redis/go-redis/v9"
+	"github.com/rs/zerolog"
 )
 
 type Server struct {

@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/rs/zerolog"
 	"github.com/krabhinav07/homefixit/internal/server"
+	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/require"
 )
 

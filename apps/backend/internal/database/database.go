@@ -12,10 +12,10 @@ import (
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/jackc/pgx/v5/tracelog"
-	"github.com/newrelic/go-agent/v3/integrations/nrpgx5"
-	"github.com/rs/zerolog"
 	"github.com/krabhinav07/homefixit/internal/config"
 	loggerConfig "github.com/krabhinav07/homefixit/internal/logger"
+	"github.com/newrelic/go-agent/v3/integrations/nrpgx5"
+	"github.com/rs/zerolog"
 )
 
 type Database struct {

@@ -6,9 +6,9 @@ import (
 	"fmt"
 
 	"github.com/hibiken/asynq"
-	"github.com/rs/zerolog"
 	"github.com/krabhinav07/homefixit/internal/config"
 	"github.com/krabhinav07/homefixit/internal/lib/email"
+	"github.com/rs/zerolog"
 )
 
 var emailClient *email.Client

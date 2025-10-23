@@ -3,12 +3,12 @@ package router
 import (
 	"net/http"
 
-	"github.com/labstack/echo/v4"
-	echoMiddleware "github.com/labstack/echo/v4/middleware"
 	"github.com/krabhinav07/homefixit/internal/handler"
 	"github.com/krabhinav07/homefixit/internal/middleware"
 	"github.com/krabhinav07/homefixit/internal/server"
 	"github.com/krabhinav07/homefixit/internal/service"
+	"github.com/labstack/echo/v4"
+	echoMiddleware "github.com/labstack/echo/v4/middleware"
 	"golang.org/x/time/rate"
 )
 

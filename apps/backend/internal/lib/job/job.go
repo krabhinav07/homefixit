@@ -2,8 +2,8 @@ package job
 
 import (
 	"github.com/hibiken/asynq"
-	"github.com/rs/zerolog"
 	"github.com/krabhinav07/homefixit/internal/config"
+	"github.com/rs/zerolog"
 )
 
 type JobService struct {

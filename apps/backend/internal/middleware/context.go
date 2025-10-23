@@ -3,11 +3,11 @@ package middleware
 import (
 	"context"
 
+	"github.com/krabhinav07/homefixit/internal/logger"
+	"github.com/krabhinav07/homefixit/internal/server"
 	"github.com/labstack/echo/v4"
 	"github.com/newrelic/go-agent/v3/newrelic"
 	"github.com/rs/zerolog"
-	"github.com/krabhinav07/homefixit/internal/logger"
-	"github.com/krabhinav07/homefixit/internal/server"
 )
 
 const (
